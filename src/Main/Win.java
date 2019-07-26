@@ -15,7 +15,7 @@ import javax.swing.JTabbedPane;
 import java.awt.BorderLayout;
 import javax.swing.JPanel;
 import java.awt.Toolkit;
-import java.awt.Window.Type;
+
 
 public class Win {
 

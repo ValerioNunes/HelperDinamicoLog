@@ -55,7 +55,7 @@ public class GrafVelocDist {
 	        
 	        for(Evento ev :  Log.Eventos ){
 	        	
-		        Second time = 	new Second(ev.getTime());
+		        Second time = new Second(ev.getTime());
 		        	s1.addOrUpdate(time, ev.getVELOCREALGPSHELPER());
 		        	s2.addOrUpdate(time, ev.getVELOC_REAL_GPS_EOT());
 		       
@@ -71,8 +71,8 @@ public class GrafVelocDist {
 		            s7.addOrUpdate(time, ev.VEL_RELAT_LE);
 		            s9.addOrUpdate(time, ev.VELOC_RELATIVA_GPS_EOT_HELPER);
 		            
-		            s10.addOrUpdate(time, ev.getPRESSAOFREIO());
-		            s11.addOrUpdate(time, ev.getPRESSAO_CILINDRO_PRINCIPAL());
+		            s10.addOrUpdate(time, ev.getPRESSAO_CILINDRO_PRINCIPAL() );
+		            s11.addOrUpdate(time, ev.getPRESSAOFREIO());
 		            s12.addOrUpdate(time, ev.getPRESSÃO_EG_EOT());
 	            
 	        }

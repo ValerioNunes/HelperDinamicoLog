@@ -26,8 +26,9 @@ public class TELA_ARQUIVAR extends JPanel {
 		 ArquivarLog.setBackground(Color.DARK_GRAY);
 		 tabbedPane.addTab("Arquivar Log", null, ArquivarLog, null);
 		 ArquivarLog.setLayout(null);
+		 setLayout(null);
 		 JPanel panel = new JPanel();
-		 panel.setBounds(349, 105, 681, 60);
+		 panel.setBounds(349, 35, 681, 60);
 		 panel.setBackground(Color.WHITE);
 		 ArquivarLog.add(panel);
 		 panel.setLayout(null);
@@ -58,14 +59,15 @@ public class TELA_ARQUIVAR extends JPanel {
 		CarragarLocomotiva(ImportLoco); 
 		
 		JLabel label = new JLabel("");
+		label.setIcon(new ImageIcon(TELA_ARQUIVAR.class.getResource("/img/Valeriano - 1.png")));
 		label.setBackground(Color.DARK_GRAY);
-		label.setIcon(new ImageIcon(TELA_ARQUIVAR.class.getResource("/IMG/NOVA LOGO(SEM FUNDO).png")));
-		label.setBounds(436, 255, 519, 350);
+		//label.setIcon(new ImageIcon(TELA_ARQUIVAR.class.getResource("/IMG/NOVA LOGO(SEM FUNDO).png")));
+		label.setBounds(552, 184, 278, 357);
 		ArquivarLog.add(label);
 		
 		JPanel panel_1 = new JPanel();
 		panel_1.setBackground(Color.WHITE);
-		panel_1.setBounds(349, 176, 681, 67);
+		panel_1.setBounds(349, 106, 681, 67);
 		ArquivarLog.add(panel_1);
 		panel_1.setLayout(null);
 		

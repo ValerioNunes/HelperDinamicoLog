@@ -672,11 +672,6 @@ public class TELA_ANALISE extends JPanel {
 		  panel.add(lblAlarmes);
 		  
 		
-		  
-
-
-
-
 
 		  this.tabbedPane_2.setSelectedComponent(this);
 		  repaint();

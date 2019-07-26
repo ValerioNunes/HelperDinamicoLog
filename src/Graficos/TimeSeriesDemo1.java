@@ -1,5 +1,6 @@
 package Graficos;
 
+import java.awt.BasicStroke;
 import java.awt.Color;
 
 import javax.swing.JPanel;
@@ -75,6 +76,10 @@ public class TimeSeriesDemo1 {
 	        chart.setBackgroundPaint(Color.white);
 
 	        XYPlot plot = (XYPlot) chart.getPlot();
+	        int seriesCount = plot.getSeriesCount();
+	        for (int i = 0; i < seriesCount; i++) {
+	          plot.getRenderer().setSeriesStroke(i, new BasicStroke(2));
+	        }
 	        plot.setBackgroundPaint(Color.lightGray);
 	        plot.setDomainGridlinePaint(Color.white);
 	        plot.setRangeGridlinePaint(Color.white);
